@@ -199,15 +199,10 @@ h2 em {
 .button.dark {
   background: var(--ink);
   color: white;
-  font-size:25px;
   transition: 0.22s ease-in-out;
 }
 .button.dark:hover {
-  color: var(--ink);
-  background: white;
-  border: 1px solid black;
-  font-weight: 600px;
-  font-size: 25px;
+  background: (--green);
 }
 .button.full {
   width: 100%;
