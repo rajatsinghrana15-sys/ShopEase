@@ -20,6 +20,6 @@ export default function OffersSlider() {
   return <section className="offers-slider" aria-label="Shop offers">
     <div className="offer-art"><span className="offer-orbit offer-orbit-one"/><span className="offer-orbit offer-orbit-two"/><Icon size={46}/></div>
     <div className="offer-content" key={active}><span className="offer-eyebrow">{offer.eyebrow} · 0{active + 1}</span><h1>{offer.title}</h1><p>{offer.detail}</p></div>
-    <div className="offer-controls"><button aria-label="Previous offer" onClick={() => go(-1)}><ArrowLeft size={17}/></button><div className="offer-dots">{offers.map((item, index) => <button key={item.title} aria-label={`Show offer ₹{index + 1}`} aria-current={index === active} onClick={() => setActive(index)}/>)}</div><button aria-label="Next offer" onClick={() => go(1)}><ArrowRight size={17}/></button></div>
+    <div className="offer-controls"><button aria-label="Previous offer" onClick={() => go(-1)}><ArrowLeft size={17}/></button><div className="offer-dots">{offers.map((item, index) => <button key={item.title} aria-label={`Show offer ${index + 1}`} aria-current={index === active} onClick={() => setActive(index)}/>)}</div><button aria-label="Next offer" onClick={() => go(1)}><ArrowRight size={17}/></button></div>
   </section>;
 }
