@@ -29,7 +29,7 @@ export default function SiteHeader({ onOpenCart, onSearch }) {
           <Menu />
         </button>
         <Link className="brand" to="/">
-          shop<span>ease</span>
+          shop<span>Ease</span>
           <i>.</i>
         </Link>
         <nav className={menuOpen ? "nav open" : "nav"}>
