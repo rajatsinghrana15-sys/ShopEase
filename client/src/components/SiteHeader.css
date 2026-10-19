@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+}
+.nav a {
+  white-space: nowrap;
+}
+.bag-button:hover,
+.icon-button:hover {
+  color: var(--rust);
+}
+.profile-button {
+  min-height: 36px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.profile-button:hover {
+  border-color: var(--rust);
+  color: var(--rust);
+}
+
+@media (max-width: 480px) {
+  .profile-button {
+    min-height: 34px;
+    padding: 0 8px;
+    gap: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    position: sticky;
+  }
+  .nav {
+    z-index: 11;
+  }
+  .head-actions {
+    flex: 0 0 auto;
+  }
+}
