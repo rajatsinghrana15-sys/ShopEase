@@ -45,9 +45,6 @@ function OrderReviewForm({ productId, productName }) {
 
   return (
     <form className="order-review-form" onSubmit={submitReview}>
-       <Link to="/" className="dashboard-home-link">
-            ← Home page
-          </Link>
       <div className="order-review-title">
         <Star size={16} />
         <b>Review {productName}</b>
@@ -160,6 +157,9 @@ export default function UserDashboard() {
 
   return (
     <main className="dashboard-page user-dashboard-page">
+      <Link to="/" className="dashboard-home-link">
+            ← Home page
+          </Link>
       <div className="dashboard-heading">
         <div>
           <div className="eyebrow">YOUR SHOP EASE</div>
