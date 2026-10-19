@@ -53,7 +53,7 @@ export default function CartDrawer({ open, onClose }) {
                   <strong>{money(product.price * quantity)}</strong>
                   <button
                     className="remove-line"
-                    aria-label={`Remove ${product.name}`}
+                    aria-label={`Remove ₹{product.name}`}
                     onClick={() => remove(product._id)}
                   >
                     ×
@@ -72,7 +72,7 @@ export default function CartDrawer({ open, onClose }) {
               </p>
               <small>
                 {shipping
-                  ? "Free shipping on orders over $75."
+                  ? "Free shipping on orders over ₹75."
                   : "Free shipping unlocked."}
               </small>
               <Link
