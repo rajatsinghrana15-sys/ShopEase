@@ -205,6 +205,19 @@
   cursor: wait;
 }
 
+.dashboard-home-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dashboard-home-link:hover {
+  color: var(--rust);
+}
+
 @media (max-width: 700px) {
   .order-bottom-grid {
     grid-template-columns: 1fr;
